@@ -8,6 +8,8 @@ const cors = require("cors");
 const logger = require("morgan");
 app.use(logger("tiny"));
 
+//db connection 
+require("./models/dbConnect").connectDatabase();
 
 // CORS configuration
 const corsOption = {
