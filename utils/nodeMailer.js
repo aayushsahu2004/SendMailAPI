@@ -81,13 +81,17 @@ exports.sendSubcribeMail = (email) => {
     </div>`
     }
 
-    transport.sendMail(mailOptionsUser, (err, info) => {
-        if (err) {
-            return console.log(err);
-        }
-        transport.sendMail(mailOptionsTeam)
-        return res.stutas(200).json({
-            message: "Mail Send Successfully! "
+    try {
+        transport.sendMail(mailOptionsUser, (err, info) => {
+            if (err) {
+                return console.log(err);
+            }
+            transport.sendMail(mailOptionsTeam)
+            return res.stutas(200).json({
+                message: "Mail Send Successfully! "
+            });
         });
-    });
+    } catch (error) {
+        res.status(500).json('Error sending email', error);
+    }
 }
