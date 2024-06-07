@@ -11,7 +11,7 @@ app.use(logger("tiny"));
 
 // CORS configuration
 const corsOption = {
-    origin:'http://127.0.0.1:5500',
+    origin:[process.env.ACCESS_ORIGIN],
     credentials:true,
     optionsSuccessStatus: 200
 }
