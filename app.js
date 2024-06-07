@@ -12,7 +12,8 @@ app.use(logger("tiny"));
 // CORS configuration
 const corsOption = {
     origin:'http://localhost:5000',
-    credentials:true
+    credentials:true,
+    optionsSuccessStatus: 200
 }
 
 app.use(cors(corsOption));
