@@ -17,7 +17,7 @@ exports.sendSubcribeMail = (email) => {
         subject: "Welcome to Medhya Technologies!",
         html: `<div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px; background-color: #ffffff;">
         <div style="text-align: center; padding-bottom: 20px;">
-            <img src="https://yourcompanylogo.com/logo.png" alt="Medhya Technologies" style="max-width: 150px;"/>
+            <img src="https://ik.imagekit.io/xfssqj13p/Medhya%20full%20logo2.svg?updatedAt=1723718532985" alt="Medhya Technologies" style="max-width: 150px;"/>
         </div>
         <h1 style="color: #FF4D00; text-align: center;">Welcome to Medhya Technologies!</h1>
         <p style="font-size: 14px; color: #555555;">Dear Subscriber,</p>
